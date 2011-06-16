@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+	<binding fileName="modules/website/persistentdocument/import/website_binding.xml" />
+
+	<attribute name="template" default="true">webfactory/tplTwo</attribute>
+	
+	<topic byDocumentId-attr="">
+		<page byLabel="Liste des liens de la rubrique" isIndexPage="true" indexingstatus="false" navigationVisibility="hidden"
+			metatitle="Rubrique &quot;{bookmarks_bookmarkContextualList.label}&quot;" description="{bookmarks_bookmarkContextualList.description}">
+			<tag name="functional_bookmarks_bookmark-list" />
+			<changecontent for="content-block">
+				<changeblock type="modules_bookmarks_BookmarkContextualList" />
+			</changecontent>
+		</page>
+		<page byLabel="Détail d'un lien" indexingstatus="false" navigationVisibility="hidden"
+			metatitle="lien &quot;{bookmarks_bookmark.label}&quot;" description="{bookmarks_bookmark.description}">
+			<tag name="functional_bookmarks_bookmark-detail" />
+			<changecontent for="content-block">
+				<changeblock type="modules_bookmarks_Bookmark" __navigationPosition="top" />
+				<changeblock type="modules_bookmarks_CommentsOnBookmark" />
+			</changecontent>
+		</page>
+	</topic>
+</script>

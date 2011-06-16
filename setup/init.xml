@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+	<binding fileName="modules/list/persistentdocument/import/list_binding.xml" />
+	<binding fileName="modules/bookmarks/persistentdocument/import/bookmarks_binding.xml" />
+
+	<rootfolder module="bookmarks">
+		<treefolder byLabel="Liens" />
+		<categoryfolder byLabel="Catégories" />
+	</rootfolder>
+</script>

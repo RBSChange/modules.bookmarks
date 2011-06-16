@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+  <binding fileName="modules/generic/persistentdocument/import/generic_binding.xml"/>
+  <binding name="bookmark" className="bookmarks_BookmarkScriptDocumentElement"/>
+  <binding name="category" className="bookmarks_CategoryScriptDocumentElement"/>
+  <binding name="categoryfolder" className="bookmarks_CategoryfolderScriptDocumentElement"/>
+  <binding name="treefolder" className="bookmarks_TreefolderScriptDocumentElement"/>
+</script>

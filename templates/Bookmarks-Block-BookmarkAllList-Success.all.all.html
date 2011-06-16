@@ -1,0 +1,9 @@
+<h2 tal:condition="blockTitle" change:h="">${blockTitle}</h2>
+
+<tal:block change:include="type 'html'; transmitAll 'true'" module="bookmarks" template="Bookmarks-Inc-Bookmark-List" />
+
+<ul class="mini-navigation" tal:condition="linkToDetailPage">
+	<li>
+		<a change:link="tag contextual_website_website_modules_bookmarks_bookmarkalllist">${trans:m.bookmarks.fo.view-complete-list,ucf}</a>
+	</li>
+</ul>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.bo.blocks.bookmark" lcid="fr_FR">
+	<key id="title">détail d'un lien</key>
+	<key id="linktotopic">lien vers la rubrique</key>
+	<key id="linktotopic-help">Activer ou non le lien vers les liens de la même rubrique.</key>
+	<key id="linktoall">lien vers tout</key>
+	<key id="linktoall-help">Activer ou non le lien vers la liste de tous les liens du site.</key>
+	<key id="navigationposition">position des liens de navigation</key>
+	<key id="navigationposition-help">Précisez ici la position des liens de navigation.</key>
+	<key id="displaymode">mode de rendu</key>
+	<key id="displaymode-help">Mode de rendu du bloc.</key>
+</i18n>

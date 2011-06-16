@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.bo.general" lcid="fr_FR">
+	<key id="module-name">annuaire de liens</key>
+	<key id="system-folder-name">annuaire de liens</key>
+	<key id="unknown-structure-initialization-script">Script d'initialisation "{script}" inconnu.</key>
+	<key id="invalid-topic">Vous devez sélectionner une rubrique.</key>
+	<key id="some-pages-already-initialized">Certaines des pages globales ont déjà été initialisées pour ce site.</key>
+	<key id="topic-already-contains-some-of-this-pages">Cette rubrique contient déjà certaines des pages.</key>
+</i18n>

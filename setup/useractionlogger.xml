@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+  <binding fileName="modules/useractionlogger/persistentdocument/import/useractionlogger_binding.xml"/>
+  <actiondef modulename="bookmarks" actionname="update.bookmark" label="m.bookmarks.bo.useractionlogger.update-bookmark"/>
+  <actiondef modulename="bookmarks" actionname="insert.bookmark" label="m.bookmarks.bo.useractionlogger.insert-bookmark"/>
+  <actiondef modulename="bookmarks" actionname="delete.bookmark" label="m.bookmarks.bo.useractionlogger.delete-bookmark"/>
+</script>

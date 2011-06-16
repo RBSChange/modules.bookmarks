@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.bo.actions" lcid="fr_FR">
+	<key id="create_">créer</key>
+	<key id="createtreefolder">créer un dossier de classement</key>
+	<key id="createcategoryfolder">créer un dossier de catégories</key>
+	<key id="createbookmark">créer un lien</key>
+	<key id="createcategory">créer une catégorie</key>
+	<key id="initdefaultstructure">initialiser les pages globales d'un site</key>
+	<key id="initlocalstructure">initialiser les pages d'une rubrique</key>
+</i18n>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.bo.blocks.bookmarkalllist" lcid="fr_FR">
+	<include id="m.bookmarks.bo.blocks.bookmarklistbase" />
+	<key id="title">liste des liens du site</key>
+	<key id="linktodetailpage">lien vers la liste complète</key>
+	<key id="linktodetailpage-help">Activer ou non le lien vers la liste complète des liens du site. Quoiqu'il arrive, ce lien sera omis sur la page taguée liste des liens du site.</key>
+</i18n>

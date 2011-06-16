@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.bo.blocks.bookmarkcontextuallist" lcid="fr_FR">
+	<include id="m.bookmarks.bo.blocks.bookmarklistbase" />
+	<key id="title">liste des liens de la rubrique</key>
+	<key id="showdetailsincurrenttopic">page de détail dans la rubrique</key>
+	<key id="showdetailsincurrenttopic-help">Choisissez oui pour que les détails des liens soient affichés dans la rubrique en cours, choisissez non pour qu'il soient affichés dans leur rubrique primaire.</key>
+</i18n>

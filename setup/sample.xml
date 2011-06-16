@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+	<binding fileName="modules/website/persistentdocument/import/website_binding.xml" />
+	<binding fileName="modules/media/persistentdocument/import/media_binding.xml" />
+	<binding fileName="modules/bookmarks/persistentdocument/import/bookmarks_binding.xml" />
+	
+	<website byTag="default_modules_website_default-website">
+		<execute method="setDocumentIdAttribute" />
+		<topic byLabel="Annuaire de liens" id="links1">
+			<topic byLabel="RBS" id="links2" />
+			<topic byLabel="Navigateurs" id="links3" />
+			<execute method="setDocumentIdAttribute" />
+			<binding fileName="modules/bookmarks/setup/localDefaultStructure.xml" />
+			<binding fileName="modules/bookmarks/setup/globalDefaultStructure.xml" />
+		</topic>
+	</website>
+	
+	<rootfolder module="media">
+		<folder byLabel="Exemple de media de L'annuaire de liens">
+			<media path="modules/bookmarks/setup/sample/RBS.jpg" byLabel="RBS" id="photo1" />
+			<media path="modules/bookmarks/setup/sample/RBSChange.jpg" byLabel="RBS Change" id="photo2" />
+		</folder>
+	</rootfolder>
+	
+  	<rootfolder module="bookmarks">
+		<categoryfolder byLabel="Catégories">
+			<category byLabel="CMS" id="cat-cms" />
+			<category byLabel="Twitter" id="cat-twi" />
+			<category byLabel="Mozilla" id="cat-moz" />
+		</categoryfolder>
+		<treefolder byLabel="Liens">
+			<treefolder byLabel="RBS">
+				<attribute name="description"><![CDATA[<p class="normal">Ready Business System (RBS), ingénierie informatique (SSII) et gestion des systèmes d'information. Prestataire de service en ingénierie informatique : PGI/ERP, Infrastructures, Hébergement - Infogérance, Internet, Solutions collaboratives, Mobilité.</p>]]></attribute>
+				<bookmark byLabel="RBS" url="http://rbs.fr/" description-attr="" topic-refids="links2" visual-refid="photo1" hasDetailPage="true" />
+				<attribute name="description"><![CDATA[<p class="normal">RBS Change : CMS Open Source, solution e-Commerce Open Source édité par RBS.</p>]]></attribute>
+				<bookmark byLabel="RBS Change" url="http://www.rbschange.fr/" description-attr="" category-refids="cat-cms" topic-refids="links2,links1" visual-refid="photo2" hasDetailPage="true" />
+				<attribute name="description"><![CDATA[<p class="normal">RBS Software, éditeur de solutions collaboratives, CMS e-commerce, logiciel mobilité et géolocalisation pour les entreprises.</p>]]></attribute>
+				<bookmark byLabel="RBS Software" url="http://www.rbs-software.fr/" description-attr="" topic-refids="links2" />
+				<attribute name="description"><![CDATA[<p class="normal">Repository git des composants RBS Change.</p>]]></attribute>
+				<bookmark byLabel="Git RBS Change" url="http://git.rbschange.fr/" description-attr="" category-refids="cat-cms" topic-refids="links2" />
+				<attribute name="description"><![CDATA[<p class="normal">Profil Twitter d'RBS Change.</p>]]></attribute>
+				<bookmark byLabel="RBS Change sur Twitter" url="https://twitter.com/#!/rbschange" description-attr="" category-refids="cat-cms,cat-twi" topic-refids="links2" />
+				<attribute name="description"><![CDATA[<p class="normal">Reprise des derniers commits des principaux composants d'RBS Change.</p>]]></attribute>
+				<bookmark byLabel="Commits RBS Change sur Twitter" url="https://twitter.com/#!/rbschangedev" description-attr="" category-refids="cat-cms,cat-twi" topic-refids="links2" />
+				<attribute name="description"><![CDATA[<p class="normal">La page Facebook d'RBS Change.</p>]]></attribute>
+				<bookmark byLabel="RBS Change sur Facebook" url="http://www.facebook.com/rbschange" description-attr="" category-refids="cat-cms" topic-refids="links2" />
+			</treefolder>
+			<attribute name="description"><![CDATA[<p class="normal">Passez à la vitesse supérieure : installez le plus sûr, le plus rapide et le plus malin des Firefox à ce jour.</p>]]></attribute>
+			<bookmark byLabel="Mozilla Europe" url="http://www.mozilla-europe.org/fr/" description-attr="" category-refids="cat-moz" topic-refids="links3,links1" />
+			<attribute name="description"><![CDATA[<p class="normal">Opera offers free and easy to download Web browsers for computers, mobile phones and devices. Share our passion for technology, and download an Opera browser today.</p>]]></attribute>
+			<bookmark byLabel="Opera software" url="http://www.opera.com/" description-attr="" topic-refids="links3,links1" />
+		</treefolder>
+	</rootfolder>
+</script>

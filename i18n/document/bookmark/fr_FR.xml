@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.document.bookmark" lcid="fr_FR">
+	<include id="m.generic.document.document" />
+	<key id="document-name">lien</key>
+	<key id="url">URL</key>
+	<key id="url-help">URL du lien.</key>
+	<key id="description">description</key>
+	<key id="description-help">Description du lien.</key>
+	<key id="visual">visuel</key>
+	<key id="visual-help">Visuel du lien.</key>
+	<key id="hasdetailpage">utiliser une page de détail</key>
+	<key id="hasdetailpage-help">Choissez oui pour utiliser une page de détail.</key>
+	<key id="topic">rubriques</key>
+	<key id="topic-help">Rubriques dans lesquelles implanter ce lien.</key>
+	<key id="category">catégories</key>
+	<key id="topic-help">Catégories du lien.</key>
+</i18n>

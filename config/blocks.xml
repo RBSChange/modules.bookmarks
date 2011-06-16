@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blocks>
+	<block type="modules_bookmarks_BookmarkAllList" icon="list-block">
+		<parameters>
+			<parameter name="displayMode" type="String" min-occurs="1" default-value="Success" fieldtype="dropdownlist" />
+			<parameter name="itemsPerPage" type="Integer" min-occurs="1" default-value="10">
+				<constraints>min:1;max:100</constraints>
+			</parameter>
+			<parameter name="showVisuals" type="Boolean" default-value="true" />
+			<parameter name="showCategories" type="Boolean" default-value="true" />
+			<parameter name="paginationPosition" type="String" default-value="bottom" from-list="modules_website/linkspositions" />
+			<parameter name="linkToDetailPage" type="Boolean" default-value="false" />
+			<parameter name="blockTitle" type="String" />
+		</parameters>
+		<metas>
+			<meta name="label" allow="title,description" />
+			<meta name="description" allow="description" />
+		</metas>
+		<xul>
+			<javascript>
+				<constructor><![CDATA[
+					this.getFields().displayMode.replaceItems({cmpref: 'modules_website/blocktemplates', blockModule: 'bookmarks', blockName: 'BookmarkAllList'});
+				]]></constructor>
+			</javascript>
+		</xul>
+	</block>
+	<block type="modules_bookmarks_BookmarkContextualList" icon="list-block">
+		<parameters>
+			<parameter name="displayMode" type="String" min-occurs="1" default-value="Success" fieldtype="dropdownlist" />
+			<parameter name="itemsPerPage" type="Integer" min-occurs="1" default-value="10">
+				<constraints>min:1;max:100</constraints>
+			</parameter>
+			<parameter name="showVisuals" type="Boolean" default-value="true" />
+			<parameter name="showCategories" type="Boolean" default-value="true" />
+			<parameter name="paginationPosition" type="String" default-value="bottom" from-list="modules_website/linkspositions" />
+			<parameter name="linkToDetailPage" type="Boolean" default-value="false" />
+			<parameter name="blockTitle" type="String" />
+		</parameters>
+		<metas>
+			<meta name="label" allow="title,description" />
+			<meta name="description" allow="description" />
+		</metas>
+		<xul>
+			<javascript>
+				<constructor><![CDATA[
+					this.getFields().displayMode.replaceItems({cmpref: 'modules_website/blocktemplates', blockModule: 'bookmarks', blockName: 'BookmarkContextualList'});
+				]]></constructor>
+			</javascript>
+		</xul>
+	</block>
+	<block type="modules_bookmarks_Bookmark" icon="bookmark" dropModels="[modules_bookmarks/bookmark]">
+		<parameters>
+			<parameter name="displayMode" type="String" min-occurs="1" default-value="Success" fieldtype="dropdownlist" />
+			<parameter name="linkToTopic" type="Boolean" default-value="true" />
+			<parameter name="linkToAll" type="Boolean" default-value="true" />
+			<parameter name="navigationPosition" type="String" default-value="none" from-list="modules_website/linkspositions" />
+		</parameters>
+		<metas>
+			<meta name="label" allow="title,description" />
+			<meta name="description" allow="description" />
+		</metas>
+		<xul>
+			<javascript>
+				<constructor><![CDATA[
+					this.getFields().displayMode.replaceItems({cmpref: 'modules_website/blocktemplates', blockModule: 'bookmarks', blockName: 'Bookmark'});
+				]]></constructor>
+			</javascript>
+		</xul>
+	</block>
+	<block type="modules_bookmarks_CategoryAllList" icon="list-block">
+		<parameters>
+			<parameter name="displayMode" type="String" min-occurs="1" default-value="Success" fieldtype="dropdownlist" />
+			<parameter name="blockTitle" type="String" />
+		</parameters>
+		<xul>
+			<javascript>
+				<constructor><![CDATA[
+					this.getFields().displayMode.replaceItems({cmpref: 'modules_website/blocktemplates', blockModule: 'bookmarks', blockName: 'CategoryAllList'});
+				]]></constructor>
+			</javascript>
+		</xul>
+	</block>
+	<block type="modules_bookmarks_CategoryContextualList" icon="list-block">
+		<parameters>
+			<parameter name="displayMode" type="String" min-occurs="1" default-value="Success" fieldtype="dropdownlist" />
+			<parameter name="blockTitle" type="String" />
+		</parameters>
+		<xul>
+			<javascript>
+				<constructor><![CDATA[
+					this.getFields().displayMode.replaceItems({cmpref: 'modules_website/blocktemplates', blockModule: 'bookmarks', blockName: 'CategoryContextualList'});
+				]]></constructor>
+			</javascript>
+		</xul>
+	</block>
+	<block type="modules_bookmarks_Category" icon="category" dropModels="[modules_bookmarks/category]">
+		<parameters>
+			<parameter name="displayMode" type="String" min-occurs="1" default-value="Success" fieldtype="dropdownlist" />
+			<parameter name="itemsPerPage" type="Integer" min-occurs="1" default-value="10">
+				<constraints>min:1;max:100</constraints>
+			</parameter>
+			<parameter name="showVisuals" type="Boolean" default-value="true" />
+			<parameter name="showCategories" type="Boolean" default-value="true" />
+			<parameter name="paginationPosition" type="String" default-value="bottom" from-list="modules_website/linkspositions" />
+			<parameter name="linkToDetailPage" type="Boolean" default-value="false" />
+			<parameter name="blockTitle" type="String" />
+		</parameters>
+		<metas>
+			<meta name="label" allow="title,description" />
+			<meta name="description" allow="description" />
+		</metas>
+		<xul>
+			<javascript>
+				<constructor><![CDATA[
+					this.getFields().displayMode.replaceItems({cmpref: 'modules_website/blocktemplates', blockModule: 'bookmarks', blockName: 'Category'});
+				]]></constructor>
+			</javascript>
+		</xul>
+	</block>
+	<block type="modules_bookmarks_CommentsOnBookmark" icon="comments">
+		<parameters>
+			<parameter name="nbitemperpage" type="Integer" default-value="25" />
+			<parameter name="allowNotRegistered" type="Boolean" default-value="true" />
+			<parameter name="enableRating" type="Boolean" default-value="true" />
+			<parameter name="showRatingDistribution" type="Boolean" default-value="true" />
+			<parameter name="displaySortOptions" type="Boolean" default-value="true" />
+			<parameter name="enableEvaluation" type="Boolean" default-value="true" />
+			<parameter name="showgravatars" type="Boolean" default-value="false" />
+		</parameters>
+	</block>
+</blocks>

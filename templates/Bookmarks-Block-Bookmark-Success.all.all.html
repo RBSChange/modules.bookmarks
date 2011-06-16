@@ -1,0 +1,30 @@
+<ul class="mini-navigation" tal:condition="php: (navigationPosition == 'top' || navigationPosition == 'both') AND (isOnDetailPage || linkToAll)">
+	<li tal:condition="isOnDetailPage">
+		<a change:link="tag functional_bookmarks_bookmark-list">${trans:m.bookmarks.fo.contextual-bookmarks,ucf}</a>
+	</li>
+	<li tal:condition="linkToAll">
+		<a change:link="tag ctx_bookmarks_bookmarkalllist">${trans:m.bookmarks.fo.all-bookmarks,ucf}</a>
+	</li>
+</ul>
+
+<h2 change:h="">
+	<a tal:condition="not:isOnDetailPage" change:link="document doc">${doc/getLabelAsHtml}</a>
+	<a tal:condition="isOnDetailPage" change:link="href doc/getIndirectUrl">${doc/getLabelAsHtml}</a>
+</h2>
+
+<img tal:condition="doc/getVisual" change:media="document doc/getVisual; class 'visual'; format 'modules.bookmarks.frontoffice/detailvisual'"/>
+
+<div class="bookmark-description" tal:condition="doc/getDescription">${doc/getDescriptionAsHtml}</div>
+
+<ul tal:condition="doc/getPublishedCategoryCount" class="bookmark-categories">
+	<li tal:repeat="category doc/getPublishedCategoryArray"><a change:link="document category">${category/getLabelAsHtml}</a></li>
+</ul>
+
+<ul class="mini-navigation" tal:condition="php: (navigationPosition == 'bottom' || navigationPosition == 'both') AND (isOnDetailPage || linkToAll)">
+	<li tal:condition="isOnDetailPage">
+		<a change:link="tag functional_bookmarks_bookmark-list">${trans:m.bookmarks.fo.contextual-bookmarks,ucf}</a>
+	</li>
+	<li tal:condition="linkToAll">
+		<a change:link="tag ctx_bookmarks_bookmarkalllist">${trans:m.bookmarks.fo.all-bookmarks,ucf}</a>
+	</li>
+</ul>

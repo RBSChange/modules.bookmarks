@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.bo.blocks.bookmarksallist.metas" lcid="fr_FR">
+	<key id="label">libellé du site</key>
+	<key id="description">description du site</key>
+</i18n>

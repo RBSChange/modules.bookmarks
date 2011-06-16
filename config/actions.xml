@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+	<action name="createFolder">
+		<parameter name="listWidget" />
+		<body><![CDATA[this.createDocumentEditor('modules_bookmarks_folder', listWidget.getSelectedItems()[0].id);]]></body>
+	</action>
+	<action name="createTreefolder">
+		<parameter name="listWidget" />
+		<body><![CDATA[this.createDocumentEditor('modules_bookmarks_treefolder', listWidget.getSelectedItems()[0].id);]]></body>
+	</action>
+	<action name="createBookmark">
+		<parameter name="listWidget" />
+		<body><![CDATA[this.createDocumentEditor('modules_bookmarks_bookmark', listWidget.getSelectedItems()[0].id);]]></body>
+	</action>
+	<action name="createCategoryfolder">
+		<parameter name="listWidget" />
+		<body><![CDATA[this.createDocumentEditor('modules_bookmarks_categoryfolder', listWidget.getSelectedItems()[0].id);]]></body>
+	</action>
+	<action name="createCategory">
+		<parameter name="listWidget" />
+		<body><![CDATA[this.createDocumentEditor('modules_bookmarks_category', listWidget.getSelectedItems()[0].id);]]></body>
+	</action>
+	<action name="initDefaultStructure">
+		<parameter name="listWidget" />
+		<body><![CDATA[
+			try
+			{
+				var params = { 
+					module: 'website', 
+					allow: 'modules_website_topic,modules_website_systemtopic', 
+					single: true, 
+					originalModule: this, 
+					scriptModuleName: 'bookmarks', 
+					scriptName: 'globalDefaultStructure'
+				};
+				getController().openModalDialog(this, 'selectStructureRoot', params);
+			}
+			catch (e)
+			{
+				wCore.error('catalog.initDefaultStructure', [], e);
+			}
+		]]></body>
+	</action>
+	<action name="initLocalStructure">
+		<parameter name="listWidget" />
+		<body><![CDATA[
+			try
+			{
+				var params = { 
+					module: 'website', 
+					allow: 'modules_website_topic,modules_website_systemtopic', 
+					single: true, 
+					originalModule: this, 
+					scriptModuleName: 'bookmarks', 
+					scriptName: 'localDefaultStructure'
+				};
+				getController().openModalDialog(this, 'selectStructureRoot', params);
+			}
+			catch (e)
+			{
+				wCore.error('catalog.initDefaultStructure', [], e);
+			}
+		]]></body>
+	</action>
+	<handler name="comment-bookmark" event="registerDocumentEditor"><![CDATA[
+		// Action added by comment.implement-on-document
+		var editor = event.originalTarget;
+		if (editor.documentname === 'bookmark')
+		{
+			editor.addTab('comments', '&modules.comment.bo.doceditor.tab.Comments;', 'comments');
+		}
+	]]></handler>
+</actions>

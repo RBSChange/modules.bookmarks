@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tags>
+	<tag labeli18n="m.bookmarks.bo.blocks.bookmark.title" icon="bookmark">functional_bookmarks_bookmark-detail</tag>
+	<tag labeli18n="m.bookmarks.bo.blocks.bookmarkalllist.title" icon="list-block">contextual_website_website_modules_bookmarks_bookmarkalllist</tag>
+	<tag labeli18n="m.bookmarks.bo.blocks.bookmarkcontextuallist.title" icon="list-block">functional_bookmarks_bookmark-list</tag>
+	<tag labeli18n="m.bookmarks.bo.blocks.category.title" icon="category">contextual_website_website_modules_bookmarks_category</tag>
+</tags>
