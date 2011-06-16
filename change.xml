@@ -9,11 +9,17 @@
 	<license>os</license>
 	<repository>public</repository>
 	<dependencies>
-		<!--<dependency>
+		<dependency>
 			<name>change-lib/framework</name>
 			<versions>
 				<version>3.5.0</version>
 			</versions>
-		</dependency>-->
+		</dependency>
+		<dependency>
+			<name>change-module/website</name>
+			<versions>
+				<version>3.5.0</version>
+			</versions>
+		</dependency>
 	</dependencies>
 </change>
