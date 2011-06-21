@@ -210,205 +210,7 @@ class bookmarks_BookmarkService extends f_persistentdocument_DocumentService
 			$this->refreshWebsites($document);
 		}
 	}
-	
-	/**
-	 * @param bookmarks_persistentdocument_bookmark $document
-	 * @param Integer $parentNodeId Parent node ID where to save the document.
-	 * @return void
-	 */
-//	protected function preInsert($document, $parentNodeId)
-//	{
-//	}
-
-	/**
-	 * @param bookmarks_persistentdocument_bookmark $document
-	 * @param Integer $parentNodeId Parent node ID where to save the document.
-	 * @return void
-	 */
-//	protected function postInsert($document, $parentNodeId)
-//	{
-//	}
-
-	/**
-	 * @param bookmarks_persistentdocument_bookmark $document
-	 * @param Integer $parentNodeId Parent node ID where to save the document.
-	 * @return void
-	 */
-//	protected function preUpdate($document, $parentNodeId)
-//	{
-//	}
-
-	/**
-	 * @param bookmarks_persistentdocument_bookmark $document
-	 * @param Integer $parentNodeId Parent node ID where to save the document.
-	 * @return void
-	 */
-//	protected function postUpdate($document, $parentNodeId)
-//	{
-//	}
-
-	/**
-	 * @param bookmarks_persistentdocument_bookmark $document
-	 * @param Integer $parentNodeId Parent node ID where to save the document.
-	 * @return void
-	 */
-//	protected function postSave($document, $parentNodeId)
-//	{
-//	}
-
-	/**
-	 * @param bookmarks_persistentdocument_bookmark $document
-	 * @return void
-	 */
-//	protected function preDelete($document)
-//	{
-//	}
-
-	/**
-	 * @param bookmarks_persistentdocument_bookmark $document
-	 * @return void
-	 */
-//	protected function preDeleteLocalized($document)
-//	{
-//	}
-
-	/**
-	 * @param bookmarks_persistentdocument_bookmark $document
-	 * @return void
-	 */
-//	protected function postDelete($document)
-//	{
-//	}
-
-	/**
-	 * @param bookmarks_persistentdocument_bookmark $document
-	 * @return void
-	 */
-//	protected function postDeleteLocalized($document)
-//	{
-//	}
-
-	/**
-	 * @param bookmarks_persistentdocument_bookmark $document
-	 * @return boolean true if the document is publishable, false if it is not.
-	 */
-//	public function isPublishable($document)
-//	{
-//		$result = parent::isPublishable($document);
-//		return $result;
-//	}
-
-
-	/**
-	 * Methode à surcharger pour effectuer des post traitement apres le changement de status du document
-	 * utiliser $document->getPublicationstatus() pour retrouver le nouveau status du document.
-	 * @param bookmarks_persistentdocument_bookmark $document
-	 * @param String $oldPublicationStatus
-	 * @param array<"cause" => String, "modifiedPropertyNames" => array, "oldPropertyValues" => array> $params
-	 * @return void
-	 */
-//	protected function publicationStatusChanged($document, $oldPublicationStatus, $params)
-//	{
-//	}
-
-	/**
-	 * Correction document is available via $args['correction'].
-	 * @param f_persistentdocument_PersistentDocument $document
-	 * @param Array<String=>mixed> $args
-	 */
-//	protected function onCorrectionActivated($document, $args)
-//	{
-//	}
-
-	/**
-	 * @param bookmarks_persistentdocument_bookmark $document
-	 * @param String $tag
-	 * @return void
-	 */
-//	public function tagAdded($document, $tag)
-//	{
-//	}
-
-	/**
-	 * @param bookmarks_persistentdocument_bookmark $document
-	 * @param String $tag
-	 * @return void
-	 */
-//	public function tagRemoved($document, $tag)
-//	{
-//	}
-
-	/**
-	 * @param bookmarks_persistentdocument_bookmark $fromDocument
-	 * @param f_persistentdocument_PersistentDocument $toDocument
-	 * @param String $tag
-	 * @return void
-	 */
-//	public function tagMovedFrom($fromDocument, $toDocument, $tag)
-//	{
-//	}
-
-	/**
-	 * @param f_persistentdocument_PersistentDocument $fromDocument
-	 * @param bookmarks_persistentdocument_bookmark $toDocument
-	 * @param String $tag
-	 * @return void
-	 */
-//	public function tagMovedTo($fromDocument, $toDocument, $tag)
-//	{
-//	}
-
-	/**
-	 * Called before the moveToOperation starts. The method is executed INSIDE a
-	 * transaction.
-	 *
-	 * @param f_persistentdocument_PersistentDocument $document
-	 * @param Integer $destId
-	 */
-//	protected function onMoveToStart($document, $destId)
-//	{
-//	}
-
-	/**
-	 * @param bookmarks_persistentdocument_bookmark $document
-	 * @param Integer $destId
-	 * @return void
-	 */
-//	protected function onDocumentMoved($document, $destId)
-//	{
-//	}
-
-	/**
-	 * this method is call before saving the duplicate document.
-	 * If this method not override in the document service, the document isn't duplicable.
-	 * An IllegalOperationException is so launched.
-	 *
-	 * @param bookmarks_persistentdocument_bookmark $newDocument
-	 * @param bookmarks_persistentdocument_bookmark $originalDocument
-	 * @param Integer $parentNodeId
-	 *
-	 * @throws IllegalOperationException
-	 */
-//	protected function preDuplicate($newDocument, $originalDocument, $parentNodeId)
-//	{
-//		throw new IllegalOperationException('This document cannot be duplicated.');
-//	}
-
-	/**
-	 * this method is call after saving the duplicate document.
-	 * $newDocument has an id affected.
-	 * Traitment of the children of $originalDocument.
-	 *
-	 * @param bookmarks_persistentdocument_bookmark $newDocument
-	 * @param bookmarks_persistentdocument_bookmark $originalDocument
-	 * @param Integer $parentNodeId
-	 *
-	 * @throws IllegalOperationException
-	 */
-//	protected function postDuplicate($newDocument, $originalDocument, $parentNodeId)
-//	{
-//	}
-	
+		
 	/**
 	 * @param bookmarks_persistentdocument_bookmark $document
 	 */
@@ -449,9 +251,21 @@ class bookmarks_BookmarkService extends f_persistentdocument_DocumentService
 	 */
 	public function getPrimaryTopicForWebsite($document, $website)
 	{
+		$topics = $document->getPublishedTopicArray();
+		$topicIds = DocumentHelper::getIdArrayFromDocumentArray($topics);
+				
 		$query = website_TopicService::getInstance()->createQuery()->add(Restrictions::descendentOf($website->getId()));
-		$query->add(Restrictions::published())->add(Restrictions::eq('bookmark', $document))->setMaxResults(1);
-		return f_util_ArrayUtils::firstElement($query->find());
+		$query->add(Restrictions::published())->add(Restrictions::in('id', $topicIds))->setProjection(Projections::property('id'));
+		$ids = $query->findColumn('id');
+		
+		foreach ($topics as $topic)
+		{
+			if (in_array($topic->getId(), $ids))
+			{
+				return $topic;
+			}
+		}
+		return null;
 	}
 
 	/**
@@ -516,33 +330,4 @@ class bookmarks_BookmarkService extends f_persistentdocument_DocumentService
 		$resume['properties']['url'] = $document->getUrl();
 		return $resume;
 	}
-
-	/**
-	 * @param bookmarks_persistentdocument_bookmark $document
-	 * @param string $bockName
-	 * @return array with entries 'module' and 'template'. 
-	 */
-//	public function getSolrserachResultItemTemplate($document, $bockName)
-//	{
-//		return array('module' => 'bookmarks', 'template' => 'Bookmarks-Inc-BookmarkResultDetail');
-//	}
-
-	/**
-	 * @param bookmarks_persistentdocument_bookmark $document
-	 * @param string $moduleName
-	 * @param string $treeType
-	 * @param array<string, string> $nodeAttributes
-	 */
-//	public function addTreeAttributes($document, $moduleName, $treeType, &$nodeAttributes)
-//	{
-//	}
-	
-	/**
-	 * @param bookmarks_persistentdocument_bookmark $document
-	 * @param String[] $propertiesName
-	 * @param Array $datas
-	 */
-//	public function addFormProperties($document, $propertiesName, &$datas)
-//	{
-//	}
 }

@@ -28,6 +28,10 @@ class bookmarks_BlockBookmarkAction extends website_BlockAction
 			}
 			return website_BlockView::NONE;
 		}
+		else if ($isOnDetailPage)
+		{
+			$this->getContext()->addCanonicalParam('topicId', null, 'bookmarks');
+		}
 		$config = $this->getConfiguration();
 		$request->setAttribute('doc', $this->getDocumentParameter());
 		$request->setAttribute('cmpref', $doc->getId());
@@ -36,6 +40,7 @@ class bookmarks_BlockBookmarkAction extends website_BlockAction
 		$request->setAttribute('navigationPosition', $config->getNavigationPosition());
 		$request->setAttribute('linkToTopic', $config->getLinkToTopic());
 		$request->setAttribute('linkToAll', $config->getLinkToAll());
+		
 		
 		$displayMode = $config->getDisplayMode();
 		return $displayMode ? $displayMode : website_BlockView::SUCCESS;

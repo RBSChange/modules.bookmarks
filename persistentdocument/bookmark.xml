@@ -8,8 +8,8 @@
 		</add>
 		<add name="description" type="XHTMLFragment" localized="true" />
 		<add name="visual" type="modules_media/media" />
-		<add name="topic" type="modules_website/topic" max-occurs="-1" inverse="true" />
-		<add name="website" type="modules_website/website" max-occurs="-1" inverse="true" />
+		<add name="topic" type="modules_website/topic" max-occurs="-1" />
+		<add name="website" type="modules_website/website" max-occurs="-1" />
 		<add name="category" type="modules_bookmarks/category" max-occurs="-1" inverse="true" />
 		<add name="hasDetailPage" type="Boolean" default-value="false" />
 	</properties>
