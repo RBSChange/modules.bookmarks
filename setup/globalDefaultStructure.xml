@@ -2,8 +2,6 @@
 <script>
 	<binding fileName="modules/website/persistentdocument/import/website_binding.xml" />
 
-	<attribute name="template" default="true">webfactory/tplTwo</attribute>
-	
 	<topic byDocumentId-attr="">
 		<page byLabel="Liste des liens du site" indexingstatus="false"
 			description="Liens du site &quot;{bookmarks_bookmarkAllList.label}&quot;">

@@ -2,8 +2,6 @@
 <script>
 	<binding fileName="modules/website/persistentdocument/import/website_binding.xml" />
 
-	<attribute name="template" default="true">webfactory/tplTwo</attribute>
-	
 	<topic byDocumentId-attr="">
 		<page byLabel="Liste des liens de la rubrique" isIndexPage="true" indexingstatus="false" navigationVisibility="hidden"
 			metatitle="Rubrique &quot;{bookmarks_bookmarkContextualList.label}&quot;" description="{bookmarks_bookmarkContextualList.description}">
