@@ -53,6 +53,7 @@ abstract class bookmarks_BlockAbstractBookmarkListAction extends website_BlockAc
 				$page = 1;
 			}
 			$offset = ($page - 1) * $itemsPerPage;
+			$this->getContext()->addCanonicalParam('page', $page > 1 ? $page : null, $this->getModuleName());
 	
 			$docs = $this->getDocs($request, $offset, $itemsPerPage);
 			$paginator = new paginator_Paginator('bookmarks', $page, $docs, $itemsPerPage);

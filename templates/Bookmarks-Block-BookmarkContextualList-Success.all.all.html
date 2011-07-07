@@ -1,4 +1,4 @@
-<h2 change:h="">${blockTitle}</h2>
+<h1 change:h="">${blockTitle}</h1>
 
 <tal:block tal:condition="configuration/getShowDetailsInCurrentTopic" change:include="type 'html'; transmitAll 'true'; topicId contextdocument/getId" module="bookmarks" template="Bookmarks-Inc-Bookmark-List" />
 <tal:block tal:condition="not: configuration/getShowDetailsInCurrentTopic" change:include="type 'html'; transmitAll 'true'" module="bookmarks" template="Bookmarks-Inc-Bookmark-List" />

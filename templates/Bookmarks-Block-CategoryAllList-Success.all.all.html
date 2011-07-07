@@ -1,6 +1,5 @@
-<h3 tal:condition="blockTitle" change:h="">${blockTitle}</h3>
-<h3 tal:condition="not: blockTitle" change:h="">${trans:m.bookmarks.fo.all-categories,ucf}</h3>
-
-<ul class="category-list">
-	<li tal:repeat="row categoriesInfos"><a change:link="document row/category">${row/category/getLabelAsHtml}</a> (${row/count})</li>
-</ul>
+<dl class="menu-list">
+	<dt tal:condition="blockTitle">${blockTitle}</dt>
+	<dt tal:condition="not: blockTitle">${trans:m.bookmarks.fo.all-categories,ucf}</dt>
+	<dd tal:repeat="row categoriesInfos"><a change:link="document row/category">${row/category/getLabelAsHtml}</a> (${row/count})</dd>
+</dl>

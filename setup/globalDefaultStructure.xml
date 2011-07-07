@@ -9,6 +9,9 @@
 			<changecontent for="content-block">
 				<changeblock type="modules_bookmarks_BookmarkAllList" />
 			</changecontent>
+			<changecontent for="sidebar-block">
+				<changeblock type="modules_bookmarks_CategoryAllList" />
+			</changecontent>
 		</page>
 		<page byLabel="Détail d'une catégorie" indexingstatus="false" navigationVisibility="hidden"
 			metatitle="Catégorie &quot;{bookmarks_category.label}&quot;" description="{bookmarks_category.description}">

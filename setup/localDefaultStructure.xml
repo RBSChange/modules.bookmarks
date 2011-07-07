@@ -9,6 +9,9 @@
 			<changecontent for="content-block">
 				<changeblock type="modules_bookmarks_BookmarkContextualList" />
 			</changecontent>
+			<changecontent for="sidebar-block">
+				<changeblock type="modules_bookmarks_CategoryContextualList" />
+			</changecontent>
 		</page>
 		<page byLabel="Détail d'un lien" indexingstatus="false" navigationVisibility="hidden"
 			metatitle="lien &quot;{bookmarks_bookmark.label}&quot;" description="{bookmarks_bookmark.description}">
