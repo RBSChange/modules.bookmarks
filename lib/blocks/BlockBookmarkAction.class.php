@@ -17,7 +17,7 @@ class bookmarks_BlockBookmarkAction extends website_BlockAction
 			return website_BlockView::NONE;
 		}
 	
-		$context = $this->getPage();
+		$context = $this->getContext();
 		$isOnDetailPage = TagService::getInstance()->hasTag($context->getPersistentPage(), 'functional_bookmarks_bookmark-detail');
 		$doc = $this->getDocumentParameter();
 		if (!($doc instanceof bookmarks_persistentdocument_bookmark) || !$doc->isPublished())
