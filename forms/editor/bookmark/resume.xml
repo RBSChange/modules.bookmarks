@@ -20,6 +20,6 @@
   </section>
   <section flex="1" name="tags" labeli18n="m.uixul.bo.doceditor.section.tags" image="{IconsBase}/small/tags.png">
     <property name="tagsaction" class="action" type="openTags" labeli18n="m.uixul.bo.doceditor.property.tags"/>
-<!-- <property name="tags" labeli18n="modules.uixul.bo.doceditor.property.Tags" /> -->
+<!-- <property name="tags" labeli18n="m.uixul.bo.doceditor.property.tags" /> -->
   </section>
 </panel>
