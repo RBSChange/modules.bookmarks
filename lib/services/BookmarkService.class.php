@@ -296,7 +296,7 @@ class bookmarks_BookmarkService extends f_persistentdocument_DocumentService
 	 */
 	public function getDisplayPage($document)
 	{
-		$request = HttpController::getInstance()->getContext()->getRequest();
+		$request = change_Controller::getInstance()->getContext()->getRequest();
 		if ($request->hasModuleParameter('bookmark', 'topicId'))
 		{
 			$topicId = $request->getModuleParameter('bookmark', 'topicId');

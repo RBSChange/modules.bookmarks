@@ -3,11 +3,11 @@
  * bookmarks_IndirectUrlAction
  * @package modules.bookmarks.actions
  */
-class bookmarks_IndirectUrlAction extends f_action_BaseAction
+class bookmarks_IndirectUrlAction extends change_Action
 {
 	/**
-	 * @param Context $context
-	 * @param Request $request
+	 * @param change_Context $context
+	 * @param change_Request $request
 	 */
 	public function _execute($context, $request)
 	{
@@ -15,11 +15,11 @@ class bookmarks_IndirectUrlAction extends f_action_BaseAction
 		$url = $bookmark->getUrl();
 		if ($url !== null)
 		{
-			HttpController::getInstance()->redirectToUrl($url);
+			change_Controller::getInstance()->redirectToUrl($url);
 		}
 		else
 		{
-			HttpController::getInstance()->redirect('website', 'Error404');
+			change_Controller::getInstance()->redirect('website', 'Error404');
 		}
 	}
 	
