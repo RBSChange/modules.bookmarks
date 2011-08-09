@@ -16,7 +16,6 @@
 			<permission name="LoadPermissions.*" />
 			<permission name="SavePermissions.*" />
 			<permission name="GetPreferencesDocument" />
-			<permission name="EditLocale" />
 			<permission name="InitStructure" />
 		</role>
 		<role name="Writer" extend="Guest">
