@@ -4,14 +4,4 @@
 	<panel name="properties" />
 	<panel name="permission" />
 	<panel name="create" />
-	<xul>
-		<javascript>
-			<constructor><![CDATA[
-				if (getController().checkModuleVersion('twitterconnect', '3.0.3'))
-				{
-					this.addTab('containertweets', "&modules.twitterconnect.bo.doceditor.tab.Automatic-tweets;", 'tweet-planner');
-				}
-			]]></constructor>
-		</javascript>
-	</xul>
 </panels>

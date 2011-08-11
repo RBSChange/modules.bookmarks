@@ -51,4 +51,43 @@ class bookmarks_TreefolderService extends generic_FolderService
 	{
 		return $this->pp->createQuery('modules_bookmarks/treefolder', false);
 	}
+	
+	/**
+	 * @param bookmarks_persistentdocument_treefolder $document
+	 * @return string[]
+	 */
+	public function getDocumentsModelNamesForTweet($document)
+	{
+		return array('modules_bookmarks/bookmark');
+	}
+	
+	/**
+	 * @param bookmarks_persistentdocument_treefolder $document
+	 * @return boolean
+	 */
+	public function canSendTweetOnContainedDocumentPublish($document)
+	{
+		return true;
+	}
+	
+	/**
+	 * @param bookmarks_persistentdocument_treefolder $document
+	 * @param string $modelName
+	 * @return integer[]
+	 */
+	public function getContainedIdsForTweet($document, $modelName)
+	{
+		$query = bookmarks_BookmarkService::getInstance()->createQuery()->add(Restrictions::published());
+		$query->add(Restrictions::descendentOf($document->getId()))->setProjection(Projections::property('id'));
+		return $query->findColumn('id');
+	}
+	
+	/**
+	 * @param bookmarks_persistentdocument_treefolder $document
+	 * @return website_persistentdocument_website[]
+	 */
+	public function getWebsitesForTweets($document)
+	{
+		return website_WebsiteService::getInstance()->createQuery()->add(Restrictions::published())->find();
+	}
 }
