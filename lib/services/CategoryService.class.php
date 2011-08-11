@@ -54,7 +54,7 @@ class bookmarks_CategoryService extends f_persistentdocument_DocumentService
 	
 	/**
 	 * @param website_persistentdocument_topic $topic
-	 * @return array each element is associative array with the category as 'category' and the event count as 'count'  
+	 * @return array each element is associative array with the category as 'category' and the bookmark count as 'count'  
 	 */
 	public function getPublishedInfosByTopic($topic)
 	{
@@ -63,7 +63,7 @@ class bookmarks_CategoryService extends f_persistentdocument_DocumentService
 	
 	/**
 	 * @param website_persistentdocument_website $website
-	 * @return array each element is associative array with the category as 'category' and the event count as 'count'
+	 * @return array each element is associative array with the category as 'category' and the bookmark count as 'count'
 	 */
 	public function getPublishedInfosByWebsite($website)
 	{
@@ -71,7 +71,7 @@ class bookmarks_CategoryService extends f_persistentdocument_DocumentService
 	}
 	
 	/**
-	 * @return array each element is associative array with the category as 'category' and the event count as 'count'
+	 * @return array each element is associative array with the category as 'category' and the bookmark count as 'count'
 	 */
 	public function getPublishedInfos()
 	{
@@ -80,7 +80,7 @@ class bookmarks_CategoryService extends f_persistentdocument_DocumentService
 	
 	/**
 	 * @param f_persistentdocument_PersistentDocument $context
-	 * @return array each element is associative array with the category as 'category' and the event count as 'count'
+	 * @return array each element is associative array with the category as 'category' and the bookmark count as 'count'
 	 */
 	protected function doGetPublishedInfos($context)
 	{

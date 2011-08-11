@@ -13,5 +13,5 @@
 	<key id="topic">rubriques</key>
 	<key id="topic-help">Rubriques dans lesquelles implanter ce lien.</key>
 	<key id="category">catégories</key>
-	<key id="topic-help">Catégories du lien.</key>
+	<key id="category-help">Catégories du lien.</key>
 </i18n>

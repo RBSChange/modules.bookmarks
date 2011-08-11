@@ -33,7 +33,6 @@
 			<parameter name="showVisuals" type="Boolean" default-value="true" />
 			<parameter name="showCategories" type="Boolean" default-value="true" />
 			<parameter name="paginationPosition" type="String" default-value="bottom" from-list="modules_website/linkspositions" />
-			<parameter name="linkToDetailPage" type="Boolean" default-value="false" />
 			<parameter name="blockTitle" type="String" />
 		</parameters>
 		<metas>
