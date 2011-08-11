@@ -65,9 +65,23 @@
 	<handler name="comment-bookmark" event="registerDocumentEditor"><![CDATA[
 		// Action added by comment.implement-on-document
 		var editor = event.originalTarget;
-		if (editor.documentname === 'bookmark')
+		switch (editor.documentname)
 		{
-			editor.addTab('comments', '&modules.comment.bo.doceditor.tab.Comments;', 'comments');
+			case 'bookmark':
+				editor.addTab('comments', '&modules.comment.bo.doceditor.tab.Comments;', 'comments');
+				if (getController().checkModuleVersion('twitterconnect', '3.0.3'))
+				{
+					editor.addTab('tweets', "&modules.twitterconnect.bo.doceditor.tab.Tweets;", 'tweet');
+				}
+				break;
+					
+			case 'treefolder':
+			case 'category':
+				if (getController().checkModuleVersion('twitterconnect', '3.0.3'))
+				{
+					editor.addTab('containertweets', "&modules.twitterconnect.bo.doceditor.tab.Automatic-tweets;", 'tweet-planner');
+				}
+				break;
 		}
 	]]></handler>
 </actions>

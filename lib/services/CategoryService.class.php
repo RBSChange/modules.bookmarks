@@ -121,4 +121,43 @@ class bookmarks_CategoryService extends f_persistentdocument_DocumentService
 		$website = website_WebsiteModuleService::getInstance()->getCurrentWebsite();
 		return TagService::getInstance()->getDocumentByContextualTag($tag, $website);
 	}
+	
+	/**
+	 * @param bookmarks_persistentdocument_category $document
+	 * @return string[]
+	 */
+	public function getDocumentsModelNamesForTweet($document)
+	{
+		return array('modules_bookmarks/bookmark');
+	}
+	
+	/**
+	 * @param bookmarks_persistentdocument_category $document
+	 * @return boolean
+	 */
+	public function canSendTweetOnContainedDocumentPublish($document)
+	{
+		return true;
+	}
+	
+	/**
+	 * @param bookmarks_persistentdocument_category $document
+	 * @param string $modelName
+	 * @return integer[]
+	 */
+	public function getContainedIdsForTweet($document, $modelName)
+	{
+		$query = bookmarks_BookmarkService::getInstance()->createQuery()->add(Restrictions::published());
+		$query->add(Restrictions::eq('category', $document))->setProjection(Projections::property('id'));
+		return $query->findColumn('id');
+	}
+	
+	/**
+	 * @param bookmarks_persistentdocument_category $document
+	 * @return website_persistentdocument_website[]
+	 */
+	public function getWebsitesForTweets($document)
+	{
+		return website_WebsiteService::getInstance()->createQuery()->add(Restrictions::published())->find();
+	}
 }

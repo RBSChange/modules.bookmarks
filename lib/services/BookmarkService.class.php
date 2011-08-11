@@ -330,4 +330,50 @@ class bookmarks_BookmarkService extends f_persistentdocument_DocumentService
 		$resume['properties']['url'] = $document->getUrl();
 		return $resume;
 	}
+	
+	/**
+	 * @param bookmarks_persistentdocument_bookmark $document
+	 * @param integer $websiteId
+	 * @return array
+	 */
+	public function getReplacementsForTweet($document, $websiteId)
+	{
+		$label = array(
+			'name' => 'label',
+			'label' => LocaleService::getInstance()->transBO('m.bookmarks.document.bookmark.label', array('ucf')),
+			'maxLength' => 80
+		);
+		$shortUrl = array(
+			'name' => 'shortUrl', 
+			'label' => LocaleService::getInstance()->transBO('m.twitterconnect.bo.general.short-url', array('ucf')),
+			'maxLength' => 30
+		);
+		if ($document !== null)
+		{
+			$website = website_persistentdocument_website::getInstanceById($websiteId);
+			$label['value'] = f_util_StringUtils::shortenString($document->getLabel(), 80);
+			$shortUrl['value'] = website_ShortenUrlService::getInstance()->shortenUrl(LinkHelper::getDocumentUrlForWebsite($document, $website));
+		}
+		return array($label, $shortUrl);
+	}
+
+	/**
+	 * @param bookmarks_persistentdocument_bookmark $document
+	 * @return f_persistentdocument_PersistentDocument[]
+	 */
+	public function getContainersForTweets($document)
+	{
+		$containers = $document->getCategoryArray();
+		$containers[] = $this->getParentOf($document);
+		return $containers;
+	}
+	
+	/**
+	 * @param bookmarks_persistentdocument_bookmark $document
+	 * @return website_persistentdocument_website[]
+	 */
+	public function getWebsitesForTweets($document)
+	{
+		return $document->getPublishedWebsiteArray();
+	}
 }
