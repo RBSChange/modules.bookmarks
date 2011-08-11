@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<i18n baseKey="m.event.bo.blocks.bookmarklistbase" lcid="fr_FR">
+<i18n baseKey="m.bookmarks.bo.blocks.bookmarklistbase" lcid="fr_FR">
 	<key id="displaymode">mode de rendu</key>
 	<key id="displaymode-help">Mode de rendu du bloc.</key>
 	<key id="itemsperpage">éléments par page</key>
 	<key id="itemsperpage-help">Spécifiez ici le nombre d'élément maximum à afficher par page.</key>
 	<key id="showvisuals">afficher les visuels</key>
-	<key id="showvisuals-help">Afficher ou non les visuels des actualités et événements dans la liste.</key>
+	<key id="showvisuals-help">Afficher ou non les visuels des liens dans la liste.</key>
 	<key id="showcategories">afficher les catégories</key>
-	<key id="showcategories-help">Afficher ou non les visuels des actualités et événements dans la liste.</key>
+	<key id="showcategories-help">Afficher ou non les visuels des liens dans la liste.</key>
 	<key id="paginationposition">position de la pagination</key>
 	<key id="paginationposition-help">Précisez ici la position de la pagination.</key>
 	<key id="blocktitle">titre du bloc</key>

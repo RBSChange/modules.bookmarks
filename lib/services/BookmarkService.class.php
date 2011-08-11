@@ -65,7 +65,7 @@ class bookmarks_BookmarkService extends f_persistentdocument_DocumentService
 	 * @param website_persistentdocument_website $website
 	 * @param integer $offset
 	 * @param integer $limit
-	 * @return event_persistentdocument_baseevent[]
+	 * @return bookmarks_persistentdocument_bookmark[]
 	 */
 	public function getPublishedAnywhere($offset, $limit)
 	{
@@ -86,7 +86,7 @@ class bookmarks_BookmarkService extends f_persistentdocument_DocumentService
 	 * @param website_persistentdocument_website $website
 	 * @param integer $offset
 	 * @param integer $limit
-	 * @return event_persistentdocument_baseevent[]
+	 * @return bookmarks_persistentdocument_bookmark[]
 	 */
 	public function getPublishedByWebsite($website, $offset, $limit)
 	{
@@ -108,7 +108,7 @@ class bookmarks_BookmarkService extends f_persistentdocument_DocumentService
 	 * @param website_persistentdocument_topic $topic
 	 * @param integer $offset
 	 * @param integer $limit
-	 * @return event_persistentdocument_baseevent[]
+	 * @return bookmarks_persistentdocument_bookmark[]
 	 */
 	public function getPublishedByTopic($topic, $offset, $limit)
 	{
@@ -117,7 +117,7 @@ class bookmarks_BookmarkService extends f_persistentdocument_DocumentService
 	}
 		
 	/**
-	 * @param event_persistentdocument_category $category
+	 * @param bookmarks_persistentdocument_category $category
 	 * @param website_persistentdocument_website $website
 	 * @return integer
 	 */
@@ -128,11 +128,11 @@ class bookmarks_BookmarkService extends f_persistentdocument_DocumentService
 	}
 	
 	/**
-	 * @param event_persistentdocument_category $category
+	 * @param bookmarks_persistentdocument_category $category
 	 * @param website_persistentdocument_website $website
 	 * @param integer $offset
 	 * @param integer $limit
-	 * @return event_persistentdocument_baseevent[]
+	 * @return bookmarks_persistentdocument_bookmark[]
 	 */
 	public function getPublishedByCategoryAndWebsite($category, $website, $offset, $limit)
 	{
@@ -141,7 +141,7 @@ class bookmarks_BookmarkService extends f_persistentdocument_DocumentService
 	}
 		
 	/**
-	 * @param event_persistentdocument_category $category
+	 * @param bookmarks_persistentdocument_category $category
 	 * @param website_persistentdocument_website $website
 	 * @return integer
 	 */
@@ -152,11 +152,11 @@ class bookmarks_BookmarkService extends f_persistentdocument_DocumentService
 	}
 	
 	/**
-	 * @param event_persistentdocument_category $category
+	 * @param bookmarks_persistentdocument_category $category
 	 * @param website_persistentdocument_website $website
 	 * @param integer $offset
 	 * @param integer $limit
-	 * @return event_persistentdocument_baseevent[]
+	 * @return bookmarks_persistentdocument_bookmark[]
 	 */
 	public function getPublishedByCategoryAndTopic($category, $topic, $offset, $limit)
 	{
@@ -179,7 +179,7 @@ class bookmarks_BookmarkService extends f_persistentdocument_DocumentService
 	 * @param f_persistentdocument_criteria_Query $query
 	 * @param integer $offset
 	 * @param $limit $offset
-	 * @return event_persistentdocument_baseevent[]
+	 * @return bookmarks_persistentdocument_bookmark[]
 	 */
 	protected function findPublished($query, $offset, $limit)
 	{
