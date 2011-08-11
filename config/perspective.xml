@@ -59,6 +59,7 @@
 			<contextactions>
 				<contextaction name="edit" />
 				<contextaction name="delete" />
+				<contextaction name="createTreefolder" />
 				<contextaction name="createBookmark" />
 				<contextaction name="openFolder" />
 			</contextactions>
@@ -84,6 +85,7 @@
 			<contextactions>
 				<contextaction name="edit" />
 				<contextaction name="delete" />
+				<contextaction name="createCategoryfolder" />
 				<contextaction name="createCategory" />
 				<contextaction name="openFolder" />
 			</contextactions>
