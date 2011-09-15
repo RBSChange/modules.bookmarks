@@ -1,8 +1,8 @@
 <h1 change:h="">${blockTitle}</h1>
 
-<div class="normal" tal:condition="contextdocument/getDescription">${contextdocument/getDescriptionAsHtml}</div>
+<div class="normal" tal:condition="contextdocument/getDescription">${structure contextdocument/getDescriptionAsHtml}</div>
 
-<p tal:condition="topic" class="normal">${trans:m.bookmarks.fo.bookmarks-filtered-by-topic-1,ucf}<a change:link="document topic">${topic/getLabelAsHtml}</a>${trans:m.bookmarks.fo.bookmarks-filtered-by-topic-2,ucf} <a change:link="document contextdocument">${trans:m.bookmarks.fo.bookmarks-filtered-by-topic-3}</a>${trans:m.bookmarks.fo.bookmarks-filtered-by-topic-4}</p>
+<p tal:condition="topic" class="normal">${trans:m.bookmarks.fo.bookmarks-filtered-by-topic-1,ucf}<a change:link="document topic">${topic/getLabel}</a>${trans:m.bookmarks.fo.bookmarks-filtered-by-topic-2,ucf} <a change:link="document contextdocument">${trans:m.bookmarks.fo.bookmarks-filtered-by-topic-3}</a>${trans:m.bookmarks.fo.bookmarks-filtered-by-topic-4}</p>
 
 <tal:block change:include="type 'html'; transmitAll 'true'" module="bookmarks" template="Bookmarks-Inc-Bookmark-List" />
 
