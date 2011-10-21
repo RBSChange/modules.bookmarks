@@ -11,7 +11,7 @@ class bookmarks_BlockBookmarkAllListAction extends bookmarks_BlockAbstractBookma
 	 */
 	protected function getParentDoc($request)
 	{
-		return website_WebsiteModuleService::getInstance()->getCurrentWebsite();
+		return website_WebsiteService::getInstance()->getCurrentWebsite();
 	}
 	
 	/**

@@ -118,7 +118,7 @@ class bookmarks_CategoryService extends f_persistentdocument_DocumentService
 	public function getDisplayPage($document)
 	{
 		$tag = 'contextual_website_website_modules_bookmarks_category';
-		$website = website_WebsiteModuleService::getInstance()->getCurrentWebsite();
+		$website = website_WebsiteService::getInstance()->getCurrentWebsite();
 		return TagService::getInstance()->getDocumentByContextualTag($tag, $website);
 	}
 	

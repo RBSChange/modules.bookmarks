@@ -18,7 +18,7 @@ class bookmarks_BlockCategoryAllListAction extends website_BlockAction
 		}
 		
 		$cs = bookmarks_CategoryService::getInstance();
-		$website = website_WebsiteModuleService::getInstance()->getCurrentWebsite();
+		$website = website_WebsiteService::getInstance()->getCurrentWebsite();
 		$request->setAttribute('website', $website);
 		$categoriesInfos = $cs->getPublishedInfosByWebsite($website);
 		if (count($categoriesInfos) > 0)
