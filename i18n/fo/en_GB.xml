@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.fo" lcid="en_GB">
+  <key id="all-bookmarks">all links</key>
+  <key id="all-categories">all categories</key>
+  <key id="back-to-topic">back to topic {topic}</key>
+  <key id="bookmarks-filtered-by-topic-1">this list is limited to the topic's links </key>
+  <key id="bookmarks-filtered-by-topic-2">. In order to see the full content of the topic, </key>
+  <key id="bookmarks-filtered-by-topic-3">click here</key>
+  <key id="bookmarks-filtered-by-topic-4">.</key>
+  <key id="bookmarks-from-website-title">site links</key>
+  <key id="categories">categories</key>
+  <key id="category-title">category: {category}</key>
+  <key id="contextual-bookmarks">topic links</key>
+  <key id="contextual-categories">topic categories</key>
+  <key id="topic-title">topic: {topic}</key>
+  <key id="view-complete-list">see the complete list</key>
+</i18n>

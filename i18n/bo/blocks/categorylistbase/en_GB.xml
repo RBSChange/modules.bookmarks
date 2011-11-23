@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.bo.blocks.categorylistbase" lcid="en_GB">
+  <key id="blocktitle">block title</key>
+  <key id="blocktitle-help">Title of the block on the site. Leave blank in order to generate it automatically.</key>
+  <key id="displaymode">rendering mode</key>
+  <key id="displaymode-help">Block rendering mode.</key>
+  <key id="itemsperpage">links per page</key>
+  <key id="itemsperpage-help">Specify the maximum number of links to display on each page here.</key>
+  <key id="paginationposition">position of the pagination</key>
+  <key id="paginationposition-help">Specify the position of the pagination here.</key>
+</i18n>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.bo.useractionlogger" lcid="en_GB">
+  <key id="delete-bookmark">delete.bookmark {documentlabel} {lang}</key>
+  <key id="insert-bookmark">insert.bookmark {lang} {documentlabel}</key>
+  <key id="log-delete-bookmark">log delete bookmark</key>
+  <key id="log-insert-bookmark">log insert bookmark</key>
+  <key id="log-update-bookmark">log update bookmark</key>
+  <key id="update-bookmark">update.bookmark {lang} {documentlabel}</key>
+</i18n>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.bo.blocks.category" lcid="en_GB">
+	<include id="m.bookmarks.bo.blocks.bookmarklistbase" />
+  <key id="linktodetailpage">link to the complete list</key>
+  <key id="linktodetailpage-help">Activates or deactivates the link to the complete list of links in the category. Regardless, this link will be omitted on the details page of the category.</key>
+  <key id="title">Details of a link category</key>
+</i18n>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.bo.blocks.bookmarklistbase" lcid="en_GB">
+  <key id="blocktitle">block title</key>
+  <key id="blocktitle-help">Title of the block on the site.</key>
+  <key id="displaymode">rendering mode</key>
+  <key id="displaymode-help">Block rendering mode.</key>
+  <key id="itemsperpage">elements per page</key>
+  <key id="itemsperpage-help">Specify the maximum number of elements to display on each page here.</key>
+  <key id="paginationposition">position of the pagination</key>
+  <key id="paginationposition-help">Specify the position of the pagination here.</key>
+  <key id="showcategories">display the categories</key>
+  <key id="showcategories-help">Show or hide the link visual elements in the list.</key>
+  <key id="showvisuals">display the visual elements</key>
+  <key id="showvisuals-help">Show or hide the link visual elements in the list.</key>
+</i18n>
