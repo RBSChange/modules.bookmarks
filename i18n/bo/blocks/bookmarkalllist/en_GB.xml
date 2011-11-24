@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.bo.blocks.bookmarkalllist" lcid="en_GB">
+  <include id="m.bookmarks.bo.blocks.bookmarklistbase"/>
+  <key id="linktodetailpage">link to the complete list</key>
+  <key id="linktodetailpage-help">Activates or deactivates the link to the complete list of links on the site. Regardless, this link will be omitted on the page tagged as the list of the site's links.</key>
+  <key id="title">list of the site's links</key>
+</i18n>

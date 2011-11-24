@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.bo.blocks.categorycontextuallist" lcid="en_GB">
+  <include id="m.bookmarks.bo.blocks.categorylistbase"/>
+  <key id="title">List of link categories in the topic</key>
+</i18n>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.bo.general" lcid="en_GB">
+  <key id="module-name">link directory</key>
+  <key id="some-pages-already-initialized">Some of the global pages have already been initialised for this site.</key>
+  <key id="system-folder-name">link directory</key>
+  <key id="topic-already-contains-some-of-this-pages">This topic already contains some of the pages.</key>
+</i18n>

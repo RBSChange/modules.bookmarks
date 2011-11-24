@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.bo.blocks.bookmarkcontextuallist" lcid="en_GB">
+  <include id="m.bookmarks.bo.blocks.bookmarklistbase"/>
+  <key id="showdetailsincurrenttopic">details page in the topic</key>
+  <key id="showdetailsincurrenttopic-help">Select "Yes" to have the link details displayed in the current topic, select "No" to have them displayed in their primary topic.</key>
+  <key id="title">list of the topic's links</key>
+</i18n>

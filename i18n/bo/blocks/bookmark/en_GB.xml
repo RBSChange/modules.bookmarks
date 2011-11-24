@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.bo.blocks.bookmark" lcid="en_GB">
+  <key id="displaymode">rendering mode</key>
+  <key id="displaymode-help">Block rendering mode.</key>
+  <key id="linktoall">link to all</key>
+  <key id="linktoall-help">Activates or deactivates the link to the list of all of the links on the site.</key>
+  <key id="linktotopic">link to the topic</key>
+  <key id="linktotopic-help">Activates or deactivates the link to all the links of the same topic.</key>
+  <key id="navigationposition">position of the navigation links</key>
+  <key id="navigationposition-help">Specify the position of the navigation links here.</key>
+  <key id="title">link details</key>
+</i18n>

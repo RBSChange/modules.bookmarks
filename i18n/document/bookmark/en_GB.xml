@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.bookmarks.document.bookmark" lcid="en_GB">
+  <include id="m.generic.document.document"/>
+  <key id="category">categories</key>
+  <key id="category-help">Link categories.</key>
+  <key id="description">description</key>
+  <key id="description-help">Link description.</key>
+  <key id="document-name">link</key>
+  <key id="hasdetailpage">use a details page</key>
+  <key id="hasdetailpage-help">Select "yes" in order to use a details page.</key>
+  <key id="topic">topics</key>
+  <key id="topic-help">Topics in which this link must be inserted.</key>
+  <key id="url">URL</key>
+  <key id="url-help">Link URL.</key>
+  <key id="visual">visual element</key>
+  <key id="visual-help">Link visual element.</key>
+</i18n>
