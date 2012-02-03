@@ -12,11 +12,11 @@
 	<a tal:condition="isOnDetailPage" change:link="href doc/getIndirectUrl">${doc/getLabelAsHtml}</a>
 </h1>
 
-<img tal:condition="doc/getVisual" change:media="document doc/getVisual; class 'visual'; format 'modules.bookmarks.frontoffice/detailvisual'"/>
+<img tal:condition="doc/getVisual" change:media="document doc/getVisual; class 'document-visual'; format 'modules.bookmarks.frontoffice/detailvisual'"/>
 
 <div class="normal bookmark-description" tal:condition="doc/getDescription">${doc/getDescriptionAsHtml}</div>
 
-<dl class="inline-list" tal:condition="doc/getPublishedCategoryCount">
+<dl class="inline-list normal-margin" tal:condition="doc/getPublishedCategoryCount">
 	<dt>${trans:modules.bookmarks.fo.categories,ucf}</dt>
 	<dd tal:repeat="category doc/getPublishedCategoryArray">
 		<a change:link="document category">${category/getLabelAsHtml}</a>
