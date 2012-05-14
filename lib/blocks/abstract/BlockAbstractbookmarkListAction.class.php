@@ -106,7 +106,7 @@ abstract class bookmarks_BlockAbstractBookmarkListAction extends website_BlockAc
 		$getter = 'getPublishedCountBy'.ucfirst($parentDoc->getPersistentModel()->getDocumentName());
 		if (!f_util_ClassUtils::methodExists($bes, $getter))
 		{
-			throw new Exception('No method ' . $getter . ' in ' . getClass($bes));
+			throw new Exception('No method ' . $getter . ' in ' . get_class($bes));
 		}
 		return $bes->{$getter}($parentDoc);
 	}
@@ -124,7 +124,7 @@ abstract class bookmarks_BlockAbstractBookmarkListAction extends website_BlockAc
 		$getter = 'getPublishedBy'.ucfirst($parentDoc->getPersistentModel()->getDocumentName());
 		if (!f_util_ClassUtils::methodExists($bes, $getter))
 		{
-			throw new Exception('No method ' . $getter . ' in ' . getClass($bes));
+			throw new Exception('No method ' . $getter . ' in ' . get_class($bes));
 		}
 		return $bes->{$getter}($parentDoc, $offset, $itemsPerPage);
 	}
